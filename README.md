@@ -39,3 +39,26 @@ npm run build
 ```
 
 ## Project Structure
+
+KisanAI/
+├── public/
+├── src/
+├── index.html
+├── vite.config.js
+├── eslint.config.js
+└── package.json
+## Linting
+
+This project uses ESLint. Run:
+
+```bash
+npm run lint
+```
+
+## Contributing
+
+Contributions are welcome! Feel free to open an issue or submit a pull request.
+
+## License
+
+Add your license here.
