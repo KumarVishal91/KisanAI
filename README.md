@@ -37,9 +37,9 @@ This starts the Vite dev server with hot module replacement.
 ```bash
 npm run build
 ```
-
 ## Project Structure
 
+```
 KisanAI/
 ├── public/
 ├── src/
@@ -47,6 +47,8 @@ KisanAI/
 ├── vite.config.js
 ├── eslint.config.js
 └── package.json
+```
+
 ## Linting
 
 This project uses ESLint. Run:
