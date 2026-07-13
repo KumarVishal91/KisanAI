@@ -1,21 +1,41 @@
-<<<<<<< HEAD
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
 # KisanAI
-.
->>>>>>> 8bd8ffcbcff360f72ba4c6b91108cba6093a9f95
+
+KisanAI is a web application built to help farmers with [brief description — e.g. crop advisory, market prices, weather insights, etc.]. Add a short paragraph here describing what the project actually does.
+
+## Tech Stack
+
+- **React** – UI library
+- **Vite** – Build tool and dev server with HMR
+- **Tailwind CSS v4** – Styling
+- **React Router** – Client-side routing
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher recommended)
+- npm
+
+### Installation
+
+```bash
+git clone https://github.com/KumarVishal91/KisanAI.git
+cd KisanAI
+npm install
+```
+
+### Development
+
+```bash
+npm run dev
+```
+
+This starts the Vite dev server with hot module replacement.
+
+### Build
+
+```bash
+npm run build
+```
+
+## Project Structure
