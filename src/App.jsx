@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Navbar from './components/navbar'
 import Home from './pages/Home'
 import Advisory from './pages/Advisory'
 import WeatherAlerts from './pages/WeatherAlerts'
@@ -9,15 +10,7 @@ import Contact from './pages/Contact'
 function App() {
   return (
     <BrowserRouter>
-      <nav className="bg-green-700 text-white p-4 flex gap-6">
-        <Link to="/">Home</Link>
-        <Link to="/advisory">Advisory</Link>
-        <Link to="/weather">Weather Alerts</Link>
-        <Link to="/calendar">Crop Calendar</Link>
-        <Link to="/about">About</Link>
-        <Link to="/contact">Contact</Link>
-      </nav>
-
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/advisory" element={<Advisory />} />
