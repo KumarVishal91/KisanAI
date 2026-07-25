@@ -1,49 +1,42 @@
+import { Link } from "react-router-dom";
+import heroImg from "../assets/hero.png";
+
 function Home() {
   return (
-    <div className="p-10">
-
-      <h1 className="text-5xl font-bold text-green-700">
-        🌾 Welcome to KisanAI
-      </h1>
-
-      <p className="mt-5 text-lg text-gray-600">
+    <div className="p-8">
+      <div className="flex items-center gap-4">
+        <img src={heroImg} alt="KisanAI logo" className="w-16 h-16" />
+        <h1 className="text-4xl font-bold text-green-700">Welcome to KisanAI</h1>
+      </div>
+      <p className="mt-4 text-gray-600 text-lg">
         AI-powered agriculture assistant helping farmers make better decisions.
       </p>
 
-      <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
-
-        <div className="bg-green-100 rounded-xl p-6 shadow">
-          <h2 className="text-2xl font-bold">
-            🌦 Weather Alerts
-          </h2>
-
-          <p className="mt-3">
-            Get real-time weather forecasts and alerts.
-          </p>
+      <div className="mt-8 grid gap-6 md:grid-cols-2">
+        <div className="bg-green-50 rounded-lg p-6 shadow-sm">
+          <h2 className="text-xl font-semibold">🌦️ Weather Alerts</h2>
+          <p className="mt-2 text-gray-600">Get real-time weather forecasts and alerts.</p>
+          <Link to="/weather" className="mt-3 inline-block text-green-700 font-medium">
+            Check Weather →
+          </Link>
         </div>
 
-        <div className="bg-yellow-100 rounded-xl p-6 shadow">
-          <h2 className="text-2xl font-bold">
-            🌱 Crop Advisory
-          </h2>
-
-          <p className="mt-3">
-            Receive AI-based crop recommendations.
-          </p>
+        <div className="bg-yellow-50 rounded-lg p-6 shadow-sm">
+          <h2 className="text-xl font-semibold">🌱 Crop Advisory</h2>
+          <p className="mt-2 text-gray-600">Get crop-specific sowing and care recommendations.</p>
+          <Link to="/advisory" className="mt-3 inline-block text-green-700 font-medium">
+            Get Advice →
+          </Link>
         </div>
 
-        <div className="bg-blue-100 rounded-xl p-6 shadow">
-          <h2 className="text-2xl font-bold">
-            📅 Crop Calendar
-          </h2>
-
-          <p className="mt-3">
-            Know the best sowing and harvesting dates.
-          </p>
+        <div className="bg-blue-50 rounded-lg p-6 shadow-sm">
+          <h2 className="text-xl font-semibold">📅 Crop Calendar</h2>
+          <p className="mt-2 text-gray-600">See seasonal planting and harvesting schedules.</p>
+          <Link to="/crop-calendar" className="mt-3 inline-block text-green-700 font-medium">
+            View Calendar →
+          </Link>
         </div>
-
       </div>
-
     </div>
   );
 }
