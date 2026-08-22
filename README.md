@@ -1,4 +1,4 @@
-# KisanAI
+#KisanAI — AI-Powered Intelligence for Modern Farming
 
 KisanAI is a web application built to help farmers with [brief description — e.g. crop advisory, market prices, weather insights, etc.]. Add a short paragraph here describing what the project actually does.
 
